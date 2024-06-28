@@ -1,6 +1,5 @@
-from STT.exceptions import STTException
-import sys
+from STT.entity.config_entity import DataIngestionConfig
+from STT.components.data_ingestion import DataIngestion
 
-from STT.logger import logging
-
-logging.info("this is my code")
+di_ins=DataIngestion(DataIngestionConfig)
+di_art=di_ins.initiate_data_ingestion()

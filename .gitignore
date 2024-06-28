@@ -5,6 +5,7 @@ __pycache__/
 data
 test.py
 STT.egg_info
+artifacts
 
 # C extensions
 *.so

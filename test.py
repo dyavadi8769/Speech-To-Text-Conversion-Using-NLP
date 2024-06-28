@@ -1,7 +1,10 @@
-from STT.entity.config_entity import DataIngestionConfig, DataPreprocessingConfig, ModelTrainerConfig
+from STT.entity.config_entity import DataIngestionConfig, DataPreprocessingConfig, ModelTrainerConfig, ModelEvaluationConfig, ModelPusherConfig
 from STT.components.data_ingestion import DataIngestion
 from STT.components.data_preprocessing import DataPreprocessing
 from STT.components.model_trainer import ModelTrainer
+from STT.entity.artifact_entity import ModelTrainerArtifacts
+from STT.components.model_evaluation import ModelEvaluation
+from STT.components.model_pusher import ModelPusher
 
 
 di_ins=DataIngestion(DataIngestionConfig)
@@ -10,3 +13,23 @@ dp_ins=DataPreprocessing(DataPreprocessingConfig, di_art)
 dp_art=dp_ins.initiate_data_preprocessing()
 mt_ins=ModelTrainer(dp_art,ModelTrainerConfig)
 mt_art=mt_ins.initiate_model_trainer()
+
+mt_art = ModelTrainerArtifacts(
+    model_path=r"C:\Users\DYAVADI\Desktop\Project\Speech-To-Text\artifacts\06_28_2024_16_10_05\model_trainer_artifact\saved_model/",
+    model_loss=1.4
+)
+
+me_ins = ModelEvaluation(ModelEvaluationConfig, mt_art)
+
+me_art = me_ins.initiate_model_evaluation()
+
+mp_ins=ModelPusher(ModelPusherConfig,me_art)
+
+mp_art=mp_ins.initiate_model_pusher() 
+
+
+"""
+from STT.pipeline.training_pipeline import TrainingPipeline
+
+train_pp=TrainingPipeline()
+train_pp.run_pipeline() """

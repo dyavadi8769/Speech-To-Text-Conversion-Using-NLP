@@ -34,7 +34,7 @@ Containerizing the application using Docker, creating CI/CD pipelines with GitHu
 2. Advanced Model Architecture: Utilizes CNNs for feature extraction and Transformers for sequence modeling to achieve high accuracy in speech-to-text conversion.
 3. Continuous Model Evaluation and Deployment: Ensures the best performing models are always deployed, leveraging AWS S3 for model storage and retrieval.
 4. Scalable and Portable Deployment: Implements Docker for consistent environment setup and portability, ensuring the system can be deployed seamlessly across different environments.
-5. Automated CI/CD Pipeline: Uses GitHub Actions to automate testing, building, and deployment processes, enhancing development efficiency and reliability.
+5. Automated CI/CD Pipeline: Uses GitHub Actions to automate the testing, building, and deployment processes, enhancing development efficiency and reliability.
 
 
 

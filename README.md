@@ -43,6 +43,6 @@ Containerizing the application using Docker, creating CI/CD pipelines with GitHu
 1. TensorFlow: For building and training the neural network models.
 2. Docker: For containerizing the application to ensure consistency across different environments.
 3. Amazon S3: For storing and retrieving model artifacts.
-4. GitHub Actions: For automating CI/CD pipelines.
+4. GitHub Actions: For automating the CI/CD pipelines.
 5. Amazon ECR: For managing Docker images.
 6. AWS EC2: For deploying the application.

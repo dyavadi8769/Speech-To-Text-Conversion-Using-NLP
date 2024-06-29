@@ -32,7 +32,7 @@ TRAIN_TEST_SPLIT_RATIO:int = 0.99
 # Model Training related constants
 MODEL_TRAINER_ARTIFACT_DIR: str = "model_trainer_artifact"
 SAVED_MODEL_DIR: str = 'saved_model/'
-EPOCHS: int = 60
+EPOCHS: int = 70
 
 # Model Evaluation related constants
 MODEL_EVALUATION_ARTIFACT_DIR: str = "model_evaluation_artifact"

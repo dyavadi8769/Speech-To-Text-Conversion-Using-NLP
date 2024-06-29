@@ -18,18 +18,6 @@ dp_art=dp_ins.initiate_data_preprocessing()
 mt_ins=ModelTrainer(dp_art,ModelTrainerConfig)
 mt_art=mt_ins.initiate_model_trainer()
 
-mt_art = ModelTrainerArtifacts(
-    model_path=r"C:\Users\DYAVADI\Desktop\Project\Speech-To-Text\artifacts\06_28_2024_16_10_05\model_trainer_artifact\saved_model/",
-    model_loss=0.6
-)
-
-me_ins = ModelEvaluation(ModelEvaluationConfig, mt_art)
-
-me_art = me_ins.initiate_model_evaluation()
-
-mp_ins=ModelPusher(ModelPusherConfig,me_art)
-
-mp_art=mp_ins.initiate_model_pusher() 
 
 
 

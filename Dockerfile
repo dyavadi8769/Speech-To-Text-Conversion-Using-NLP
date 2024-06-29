@@ -1,11 +1,13 @@
-FROM continuumio/miniconda3
+FROM python:3.8-slim
 
-RUN apt update -y && pip3 --no-cache-dir install --upgrade awscli
+RUN apt update -y && \
+    apt install -y --no-install-recommends build-essential && \
+    pip install --no-cache-dir --upgrade pip
 
 WORKDIR /app
 
-COPY  . /app
+COPY . /app
 
 RUN pip install -r requirements.txt
 
-CMD ["python3", "app.py"]
+CMD ["python", "app.py"]

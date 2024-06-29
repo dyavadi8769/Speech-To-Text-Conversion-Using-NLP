@@ -8,6 +8,9 @@ STT.egg_info
 artifacts
 logs
 data
+test.py
+Speech_to_text.ipynb
+prediction_artifacts
 
 # C extensions
 *.so

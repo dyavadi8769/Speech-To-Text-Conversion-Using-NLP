@@ -8,7 +8,6 @@ STT.egg_info
 artifacts
 logs
 data
-Projectflow
 
 # C extensions
 *.so

@@ -6,6 +6,10 @@ from STT.entity.artifact_entity import ModelTrainerArtifacts
 from STT.components.model_evaluation import ModelEvaluation
 from STT.components.model_pusher import ModelPusher
 
+from STT.pipeline.prediction_pipeline import Prediction
+
+
+
 
 di_ins=DataIngestion(DataIngestionConfig)
 di_art=di_ins.initiate_data_ingestion()
@@ -16,7 +20,7 @@ mt_art=mt_ins.initiate_model_trainer()
 
 mt_art = ModelTrainerArtifacts(
     model_path=r"C:\Users\DYAVADI\Desktop\Project\Speech-To-Text\artifacts\06_28_2024_16_10_05\model_trainer_artifact\saved_model/",
-    model_loss=1.4
+    model_loss=0.6
 )
 
 me_ins = ModelEvaluation(ModelEvaluationConfig, mt_art)
@@ -28,8 +32,7 @@ mp_ins=ModelPusher(ModelPusherConfig,me_art)
 mp_art=mp_ins.initiate_model_pusher() 
 
 
-"""
-from STT.pipeline.training_pipeline import TrainingPipeline
 
-train_pp=TrainingPipeline()
-train_pp.run_pipeline() """
+
+
+

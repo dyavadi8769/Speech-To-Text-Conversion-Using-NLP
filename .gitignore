@@ -6,6 +6,8 @@ data
 test.py
 STT.egg_info
 artifacts
+prediction_artifacts
+logs
 
 # C extensions
 *.so

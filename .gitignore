@@ -8,7 +8,6 @@ STT.egg_info
 artifacts
 prediction_artifacts
 logs
-.github
 
 # C extensions
 *.so

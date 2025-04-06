@@ -46,3 +46,11 @@ Containerizing the application using Docker, creating CI/CD pipelines with GitHu
 4. GitHub Actions: For automating the CI/CD pipelines.
 5. Amazon ECR: For managing Docker images.
 6. AWS EC2: For deploying the application.
+
+# Author:
+
+```bash
+Author: Sai Kiran Reddy Dyavadi
+Role  : Data Scientist
+Email : dyavadi324@gmail.com
+```
